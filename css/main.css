@@ -1,0 +1,247 @@
+
+
+:root {
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: 'Merienda', cursive;
+}
+
+::selection {
+    background-color: #5F9EA0;
+    color: #fff;
+}
+
+#sideBar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+}
+
+#sideBar nav {
+    width: 15.625rem;
+    height: 100vh;
+    background-color: #00000091;
+    color: #fff;
+}
+
+#sideBar nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+}
+
+#sideBar nav ul li {
+    padding: 15px;
+    font-size: 1.375rem;
+    letter-spacing: 1.5px;
+}
+
+#sideBar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+#sideBar nav .close {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#sideBar nav ul li a:hover,
+#sideBar nav span:hover {
+    color: #38888b;
+}
+
+#sideBar .icon button {
+    background-color: #5F9EA0;
+    width: 5rem;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 30%;
+    transition: .3s;
+}
+
+#sideBar .icon button:hover {
+    background-color: #348c8f ;
+}
+
+
+#home {
+    background-image: linear-gradient(#000000c4 0% 100%),
+                        url(../images/events-heavenly-header.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .caption h1 {
+    font-size: 3.75rem;
+    letter-spacing: .4375rem;
+    font-weight: 800;
+}
+
+#home .caption p {
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+}
+
+#details {
+    background-color: #eee;
+}
+
+#details .text {
+    margin: 10px;
+}
+
+#details .text h2 {
+    background-color: #317a7c;
+    color: #fff;
+    padding: 0.9375rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+#details .text p {
+    background-color: #74b7b9;
+    padding: 20px;
+    font-size: 1.0625rem;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    width: 100%;
+}
+
+#details .text .twoPara,
+#details .text .threePara,
+#details .text .fourPara {
+    display: none;
+}
+
+#duration {
+    background-image: linear-gradient(#000000a6 0% 100%) ,url(../images/invitation-2508607__340.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#duration .item {
+    background-color: #5F9EA0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin-block: 50%;
+    padding: 1.875rem .625rem;
+    border-radius: 5px;
+}
+
+#contact {
+    background-color: #eee;
+}
+
+#contact h3 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    padding: 15px 0 5px;
+}
+
+#contact p {
+    font-weight: 300;
+}
+
+#contact .links ul li:nth-child(2) {
+    color: #00b9bf;
+}
+
+#contact .social ul li {
+    font-size: 18px;
+    border: 2px solid #5F9EA0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#contact .social ul li:hover,
+#contact button:hover {
+    background-color: #5F9EA0;
+    color: #fff;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: .5s;
+    box-shadow: 0 0 0 0.15rem transparent;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border: 1px solid #5F9EA0;
+    box-shadow: 0 0 0 0.17rem #00b9bf78;
+}
+
+#contact p span {
+    color: #00b9bf;
+    font-weight: 800;
+}
+
+#contact button {
+    border: 2px solid #5F9EA0;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 514px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 340px) {
+    html {
+        font-size: 7px;
+    }
+}
